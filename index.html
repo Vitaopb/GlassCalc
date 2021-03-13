@@ -18,36 +18,37 @@
             <!--Utilizando table para os buttons-->
             <table>
                 <tr>
-                    <td><input class="button-calc" type="button" value="C" id="clear" onclick=funcao()></td>
-                    <td><input class="button-calc" type="button" value="%"></td>
-                    <td><input class="button-calc" type="button" value="/"></td>
-                    <td><input class="button-calc" type="button" value="x"></td>
+                    <td><input class="button-calc" type="button" value="C" id="clear" onclick='clean()'></td>
+                    <td><input class="button-calc" type="button" value="<" onclick='back()'></td>
+                    <td><input class="button-calc" type="button" value="/" onclick='inserir("/")'></td>
+                    <td><input class="button-calc" type="button" value="x" onclick='inserir("+")'></td>
                 </tr>
 
                 <tr>
-                    <td><input class="button-calc" type="button" value="7" onclick=inserir(7)></td>
-                    <td><input class="button-calc" type="button" value="8" onclick=inserir(8)></td>
-                    <td><input class="button-calc" type="button" value="9" onclick=inserir(9)></td>
-                    <td><input class="button-calc" type="button" value="-"></td>
+                    <td><input class="button-calc" type="button" value="7" onclick='inserir(7)'></td>
+                    <td><input class="button-calc" type="button" value="8" onclick='inserir(8)'></td>
+                    <td><input class="button-calc" type="button" value="9" onclick='inserir(9)'></td>
+                    <td><input class="button-calc" type="button" value="-" onclick='inserir("-")'></td>
                 </tr>
 
                 <tr>
-                    <td><input class="button-calc" type="button" value="4" onclick=inserir(4)></td>
-                    <td><input class="button-calc" type="button" value="5" onclick=inserir(5)></td>
-                    <td><input class="button-calc" type="button" value="6" onclick=inserir(6)></td>
-                    <td><input class="button-calc" type="button" value="+"></td>
+                    <td><input class="button-calc" type="button" value="4" onclick='inserir(4)'></td>
+                    <td><input class="button-calc" type="button" value="5" onclick='inserir(5)'></td>
+                    <td><input class="button-calc" type="button" value="6" onclick='inserir(6)'></td>
+                    <td><input class="button-calc" type="button" value="+" onclick='inserir("+")'></td>
                 </tr>
 
                 <tr>
-                    <td><input class="button-calc" type="button" value="1" onclick=inserir(1)></td>
-                    <td><input class="button-calc" type="button" value="2" onclick=inserir(2)></td>
-                    <td><input class="button-calc" type="button" value="3" onclick=inserir(3)></td>
-                    <td><input class="button-calc" type="button" value="="></td>
+                    <td><input class="button-calc" type="button" value="1" onclick='inserir(1)'></td>
+                    <td><input class="button-calc" type="button" value="2" onclick='inserir(2)'></td>
+                    <td><input class="button-calc" type="button" value="3" onclick='inserir(3)'></td>
+                    <td rowspan="5"><input class="button-calc" type="button" value="=" style='height:100px'></td>
                 </tr>
 
                 <tr>
-                    <td><input class="button-calc" type="button" value="0" onclick=inserir(0)></td>
-                    <td><input class="button-calc" type="button" value="." onclick=inserir(".")></td>
+                    <td colspan="2"><input class="button-calc" style='width:100px' type="button" value="0"
+                            onclick='inserir(0)'></td>
+                    <td><input class="button-calc" type="button" value="." onclick='inserir(".")'></td>
                 </tr>
 
             </table>
