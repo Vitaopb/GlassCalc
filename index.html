@@ -12,6 +12,11 @@
 <body>
     <main class="main-calc">
         <div class="calculadora" data-tilt>
+
+            <div>
+
+            </div>
+
             <form name="form" class="">
                 <input class="numview" name="numview" id="numview" disabled>
             </form>
@@ -21,28 +26,30 @@
                     <td><input class="button-calc" type="button" value="C" id="clear" onclick='clean()'></td>
                     <td><input class="button-calc" type="button" value="<" onclick='back()'></td>
                     <td><input class="button-calc" type="button" value="/" onclick='inserir("/")'></td>
-                    <td><input class="button-calc" type="button" value="x" onclick='inserir("+")'></td>
+                    <td><input class="button-calc" type="button" value="+" id="soma" onclick='inserir("+")'></td>
                 </tr>
 
                 <tr>
                     <td><input class="button-calc" type="button" value="7" onclick='inserir(7)'></td>
                     <td><input class="button-calc" type="button" value="8" onclick='inserir(8)'></td>
                     <td><input class="button-calc" type="button" value="9" onclick='inserir(9)'></td>
-                    <td><input class="button-calc" type="button" value="-" onclick='inserir("-")'></td>
+                    <td><input class="button-calc" type="button" value="-" id="menos" onclick='inserir("-")'></td>
                 </tr>
 
                 <tr>
                     <td><input class="button-calc" type="button" value="4" onclick='inserir(4)'></td>
                     <td><input class="button-calc" type="button" value="5" onclick='inserir(5)'></td>
                     <td><input class="button-calc" type="button" value="6" onclick='inserir(6)'></td>
-                    <td><input class="button-calc" type="button" value="+" onclick='inserir("+")'></td>
+                    <td><input class="button-calc" type="button" value="*" id="mult" onclick='inserir("*")'></td>
                 </tr>
 
                 <tr>
                     <td><input class="button-calc" type="button" value="1" onclick='inserir(1)'></td>
                     <td><input class="button-calc" type="button" value="2" onclick='inserir(2)'></td>
                     <td><input class="button-calc" type="button" value="3" onclick='inserir(3)'></td>
-                    <td rowspan="5"><input class="button-calc" type="button" value="=" style='height:100px'></td>
+                    <td rowspan="5"><input class="button-calc" type="button" id="igual" value="=" onclick="igual()"
+                            style='height:100px'>
+                    </td>
                 </tr>
 
                 <tr>
