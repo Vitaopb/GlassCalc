@@ -1,3 +1,8 @@
+VanillaTilt.init(document.querySelector(".calculadora"), {
+    max: 20,
+    speed: 300
+});
+
 function inserir(numero) {
     document.getElementById("numview").value += numero;
 }
