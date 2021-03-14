@@ -68,17 +68,32 @@ body .main-calc .calculadora .button-calc {
 }
 body .main-calc .calculadora .button-calc:hover {
   background: rgba(255, 255, 255, 0.514);
-  color: #353535;
+  color: white;
+}
+body .main-calc .calculadora .button-calc:active {
+  background: rgba(255, 255, 255, 0.781);
 }
 body .main-calc .calculadora #soma {
   background: rgba(255, 203, 31, 0.767);
 }
+body .main-calc .calculadora #soma:active {
+  background: rgba(255, 203, 31, 0.932);
+}
 body .main-calc .calculadora #menos {
   background: rgba(255, 39, 31, 0.767);
+}
+body .main-calc .calculadora #menos:active {
+  background: rgba(255, 39, 31, 0.877);
 }
 body .main-calc .calculadora #mult {
   background: rgba(31, 128, 255, 0.767);
 }
+body .main-calc .calculadora #mult:active {
+  background: rgba(31, 128, 255, 0.87);
+}
 body .main-calc .calculadora #igual {
   background: rgba(116, 206, 13, 0.767);
+}
+body .main-calc .calculadora #igual:active {
+  background: rgba(116, 206, 13, 0.856);
 }
