@@ -63,22 +63,35 @@ body {
                 transition: all 0.2s;
                 &:hover {
                     background: rgba(255, 255, 255, 0.514);
-                    color: rgb(53, 53, 53);
+                    color: rgb(255, 255, 255);
+                }
+                &:active {
+                    background: rgba(255, 255, 255, 0.781);
                 }
             }
             #soma {
                 background: rgba(255, 203, 31, 0.767);
+                &:active {
+                    background: rgba(255, 203, 31, 0.932);
+                }
             }
             #menos {
                 background: rgba(255, 39, 31, 0.767);
+                &:active {
+                    background: rgba(255, 39, 31, 0.877);
+                }
             }
             #mult {
                 background: rgba(31, 128, 255, 0.767);
+                &:active {
+                    background: rgba(31, 128, 255, 0.87);
+                }
             }
             #igual {
                 background: rgba(116, 206, 13, 0.767);
-            }
-            &:hover {
+                &:active {
+                    background: rgba(116, 206, 13, 0.856);
+                }
             }
         }
     }
